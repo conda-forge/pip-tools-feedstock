@@ -5,7 +5,7 @@ Home: https://pypi.org/project/pip-tools/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: pip-tools keeps your pinned dependencies fresh.
 
