@@ -1,5 +1,5 @@
 {% set name = "pip-tools" %}
-{% set version = "6.5.1" %}
+{% set version = "6.6.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 80f562aa699fc76a424539697e0bef41e490a050e57a6a21468531981a9d419e
+  sha256: 98aa24004440a1c0489d71a567a4e8afdf23c7782bff483d1219881e7302de83
 
 build:
   number: 0
