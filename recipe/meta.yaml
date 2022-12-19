@@ -1,5 +1,5 @@
 {% set name = "pip-tools" %}
-{% set version = "6.6.2" %}
+{% set version = "6.9.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f638503a9f77d98d9a7d72584b1508d3f82ed019b8fab24f4e5ad078c1b8c95e
+  sha256: b4762359978fd81a2b4b666e6dca15266bdc65680d06900c4da34243f35e4b5d
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - setuptools_scm
   run:
     - click >=7
-    - pep517
+    - python-build
     - pip >=20.3
     - python >=3.6
 
