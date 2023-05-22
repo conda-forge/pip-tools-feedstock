@@ -10,7 +10,7 @@ source:
   sha256: 61d46bd2eb8016ed4a924e196e6e5b0a268cd3babd79e593048720db23522bb1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - pip-compile = piptools.scripts.compile:cli
@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - build
+    - python-build
     - click >=7
     - pip >=21.2
     - setuptools
