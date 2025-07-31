@@ -1,13 +1,13 @@
 {% set name = "pip-tools" %}
-{% set version = "7.4.1" %}
+{% set version = "7.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pip-tools-{{ version }}.tar.gz
-  sha256: 864826f5073864450e24dbeeb85ce3920cdfb09848a3d69ebf537b521f14bcc9
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 30639f50961bb09f49d22f4389e8d7d990709677c094ce1114186b1f2e9b5821
 
 build:
   number: 0
