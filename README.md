@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pip-tools` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install pip-tools
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install pip-tools
 ```
 
-It is possible to list all of the versions of `pip-tools` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add pip-tools
+# for installing globally
+pixi global install pip-tools
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `pip-tools` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search pip-tools --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search pip-tools --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search pip-tools --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds pip-tools --channel conda-forge
 # List dependencies of `pip-tools`:
 mamba repoquery depends pip-tools --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
