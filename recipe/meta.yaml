@@ -1,5 +1,5 @@
 {% set name = "pip-tools" %}
-{% set version = "7.6.1" %}
+{% set version = "7.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 695556edeb647eb94ee8345cc7108657fdb7fb16b3876623a399b4f61bbede01
+  sha256: 04dbe0e25f3b60fbdeee17d0590dac7fe20039876aa410a946fc54dc926c09ba
 
 build:
   number: 0
